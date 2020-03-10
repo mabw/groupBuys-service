@@ -37,8 +37,8 @@ module.exports = appInfo => {
     allowMethods: "GET,HEAD,PUT,POST,DELETE,PATCH"
   };
 
-  config.client = {
-    url: "mongodb://192.168.3.107/group-buys-dev",
+  config.mongoose = {
+    url: "mongodb://192.168.3.107:32771/groupBuysDev",
     options: {}
   };
 

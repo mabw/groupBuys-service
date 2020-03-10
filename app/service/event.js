@@ -2,8 +2,8 @@
 
 const Service = require("egg").Service;
 
-class OrderService extends Service {
-  async findOrder() {
+class EventService extends Service {
+  async findEvent() {
     const result = await this.ctx.model.Order.aggregate([
       {
         $lookup: {
@@ -18,4 +18,4 @@ class OrderService extends Service {
   }
 }
 
-module.exports = OrderService;
+module.exports = EventService;
